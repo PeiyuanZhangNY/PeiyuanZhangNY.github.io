@@ -15,21 +15,29 @@
 				flex-wrap: wrap;
 			}
 			
-			.nav-buttons .button {
-				min-width: 240px;            /* slightly wider */
-				text-align: center;
-				padding: 1.1rem 2.5rem;      /* taller + more horizontal padding */
-				font-size: 1.3rem;           /* larger text */
-				font-weight: 700;            /* stronger emphasis */
-				background-color: #2c3e50;
-				color: #ffffff !important;   /* force white text */
-				border: 3px solid #2c3e50;
-				border-radius: 10px;
-				text-decoration: none;
-				transition: all 0.3s ease;
-				box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-				letter-spacing: 0.5px;
-			}
+.nav-buttons .button {
+	display: flex;                 /* enable flexbox */
+	align-items: center;           /* vertical centering */
+	justify-content: center;       /* horizontal centering */
+
+	min-width: 240px;
+	height: 70px;                  /* fixed height ensures symmetry */
+	padding: 0 2.5rem;             /* horizontal padding only */
+
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+
+	background-color: #2c3e50;
+	color: #ffffff !important;
+	border: 3px solid #2c3e50;
+	border-radius: 10px;
+	text-decoration: none;
+
+	transition: all 0.3s ease;
+	box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
 
 			
 			.nav-buttons .button:hover {
